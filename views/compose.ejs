@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+<h1>Compose</h1>
+
+<%# handles post request to compose route; type and name(name is how you link it with server!) %>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="postTitle">
+    <label>Post</label>
+    <textarea class="form-control" name="postBody" cols="40" rows="5"></textarea>
+  </div>
+
+  <%# outside of bootstrap form group %>
+  <button type="submit" class="btn btn-primary" name="compose">publish</button>
+</form>
+
+
+
+<%- include('partials/footer'); -%>
